@@ -1,3 +1,4 @@
+@import "fonts";
 @import "variables";
 @import "mixins";
 
@@ -9,7 +10,6 @@ html {
 .food {
   position: absolute;
   top: 62.21px;
-  left: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
@@ -53,7 +53,7 @@ html {
 .login {
   position: absolute;
   top: 430px;
-  left: 24px;
+  left: 12px;
   width: 360px;
   height: 390px;
   margin-top: 30px;
@@ -98,7 +98,7 @@ html {
       width: 106px;
       height: 26px;
       font-size: 20px;
-      font-weight: bold;
+      font-family: "RokhBold";
     }
   }
 
@@ -110,7 +110,7 @@ html {
     height: 18px;
     color: $blockColor;
     font-size: 14px;
-    font-weight: 300;
+    font-family: "RokhSemiBold";
   }
 
   .login__input {
@@ -141,7 +141,7 @@ html {
       width: 108px;
       height: 20px;
       font-size: 16px;
-      font-weight: 500;
+      font-family: "RokhSemiBold";
       color: $blackColor2;
     }
   }
@@ -174,15 +174,118 @@ html {
     &:hover {
       background-color: #e11d48;
     }
-    p{
+    p {
       position: absolute;
       top: 5px;
       left: 119px;
       width: 26px;
       height: 18px;
+      font-family: "RokhBold";
       font-size: 16px;
       color: $whiteColor;
-      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .food {
+    max-width: 1024px;
+    top: 40px;
+    left: 60%;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    .food__item {
+      width: 200px;
+      height: 200px;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .login {
+    top: 650px;
+    width: 600px;
+    height: 420px;
+    left: 60%;
+    transform: translateX(-50%);
+
+    img {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110px;
+    }
+
+    .login__header {
+      top: 70px;
+      left: 90%;
+      transform: translateX(-50%);
+      width: 452px;
+      height: 75px;
+
+      .icon__circle {
+        width: 75px;
+        height: 75px;
+        left: 130px;
+      }
+
+      i {
+        top: 25px;
+        left: 25px;
+        font-size: 24px;
+      }
+
+      p {
+        top: 10px;
+        width: 150px;
+        right: 75%;
+        font-size: 22px;
+      }
+    }
+
+    .login__description {
+      top: 150px;
+      left: 52%;
+      transform: translateX(-50%);
+      width: 800px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .login__input {
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 430px;
+      i {
+        width: 50px;
+      }
+      input {
+        left: 210px;
+        font-size: 18px;
+        width: 180px;
+      }
+    }
+
+    .login__submit {
+      top: 310px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 430px;
+
+      i {
+        left: 230px;
+      }
+
+      p {
+        left: 200px;
+        font-size: 18px;
+      }
     }
   }
 }

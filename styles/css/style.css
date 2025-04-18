@@ -1,9 +1,33 @@
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body,
 html {
   position: relative;
   max-width: 393px;
   height: 900px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "RokhBold";
   text-align: center;
   margin: auto;
   padding: 0;
@@ -15,7 +39,6 @@ html {
 .food {
   position: absolute;
   top: 62.21px;
-  left: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
@@ -56,7 +79,7 @@ html {
 .login {
   position: absolute;
   top: 430px;
-  left: 24px;
+  left: 12px;
   width: 360px;
   height: 390px;
   margin-top: 30px;
@@ -101,7 +124,7 @@ html {
   width: 106px;
   height: 26px;
   font-size: 20px;
-  font-weight: bold;
+  font-family: "RokhBold";
 }
 .login .login__description {
   position: absolute;
@@ -111,7 +134,7 @@ html {
   height: 18px;
   color: #000000;
   font-size: 14px;
-  font-weight: 300;
+  font-family: "RokhSemiBold";
 }
 .login .login__input {
   position: absolute;
@@ -140,7 +163,7 @@ html {
   width: 108px;
   height: 20px;
   font-size: 16px;
-  font-weight: 500;
+  font-family: "RokhSemiBold";
   color: rgba(0, 0, 0, 0.5019607843);
 }
 .login .login__submit {
@@ -176,9 +199,99 @@ html {
   left: 119px;
   width: 26px;
   height: 18px;
+  font-family: "RokhBold";
   font-size: 16px;
   color: #FFFFFF;
-  font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .food {
+    max-width: 1024px;
+    top: 40px;
+    left: 60%;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .food .food__item {
+    width: 200px;
+    height: 200px;
+  }
+  .food .food__item img {
+    width: 50%;
+  }
+  .login {
+    top: 650px;
+    width: 600px;
+    height: 420px;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+  .login img {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+  }
+  .login .login__header {
+    top: 70px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 452px;
+    height: 75px;
+  }
+  .login .login__header .icon__circle {
+    width: 75px;
+    height: 75px;
+    left: 130px;
+  }
+  .login .login__header i {
+    top: 25px;
+    left: 25px;
+    font-size: 24px;
+  }
+  .login .login__header p {
+    top: 10px;
+    width: 150px;
+    right: 75%;
+    font-size: 22px;
+  }
+  .login .login__description {
+    top: 150px;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 800px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .login .login__input {
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+  }
+  .login .login__input i {
+    width: 50px;
+  }
+  .login .login__input input {
+    left: 210px;
+    font-size: 18px;
+    width: 180px;
+  }
+  .login .login__submit {
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+  }
+  .login .login__submit i {
+    left: 230px;
+  }
+  .login .login__submit p {
+    left: 200px;
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
