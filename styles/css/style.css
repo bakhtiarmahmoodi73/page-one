@@ -24,7 +24,6 @@
 }
 body,
 html {
-  position: relative;
   max-width: 393px;
   height: 900px;
   font-family: "RokhBold";
@@ -34,11 +33,13 @@ html {
   margin-bottom: 20px;
   justify-content: center;
   background-color: #FAFAFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .food {
-  position: absolute;
-  top: 62.21px;
+  margin-top: 62.21px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
@@ -77,140 +78,131 @@ html {
 }
 
 .login {
-  position: absolute;
-  top: 430px;
-  left: 12px;
+  margin-top: 50px;
   width: 360px;
   height: 390px;
-  margin-top: 30px;
+  padding: 16px;
   background-color: #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .login img {
-  position: absolute;
-  top: 16px;
-  left: 144px;
   width: 57px;
+  margin-top: 16px;
 }
 .login .login__header {
-  position: absolute;
-  top: 55px;
-  left: 159px;
   width: 162px;
   height: 48px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 159px;
 }
 .login .login__header .icon__circle {
-  position: absolute;
-  left: 114px;
-  top: 4px;
   width: 48px;
   height: 48px;
   background-color: #FF395C;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 114px;
 }
 .login .login__header i {
-  position: absolute;
-  top: 13px;
-  left: 18px;
   color: #FFFFFF;
+  font-size: 20px;
 }
 .login .login__header p {
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 106px;
+  margin-right: 65px;
+  margin-top: 18px;
   height: 26px;
   font-size: 20px;
   font-family: "RokhBold";
 }
 .login .login__description {
-  position: absolute;
-  top: 135px;
-  left: 39px;
   width: 297px;
   height: 18px;
+  margin-top: 12px;
+  margin-left: 35px;
+  text-align: center;
   color: #000000;
   font-size: 14px;
   font-family: "RokhSemiBold";
 }
 .login .login__input {
-  position: absolute;
-  top: 185px;
-  left: 24px;
   width: 297px;
   height: 64px;
   background-color: rgba(222, 223, 234, 0.3490196078);
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
 }
 .login .login__input i {
-  position: absolute;
-  top: 20px;
-  left: 16px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 20px;
   width: 24px;
   height: 24px;
-  color: rgba(0, 0, 0, 0.5019607843);
+  position: absolute;
+  margin-right: 270px;
 }
 .login .login__input input {
-  position: absolute;
-  top: 22px;
-  left: 173px;
   border: none;
   background: transparent;
   outline: none;
   width: 108px;
   height: 20px;
+  margin-left: 280px;
   font-size: 16px;
   font-family: "RokhSemiBold";
   color: rgba(0, 0, 0, 0.5019607843);
 }
 .login .login__submit {
-  position: absolute;
-  width: 297px;
+  width: 320px;
   height: 64px;
-  top: 294px;
-  left: 24px;
   background-color: #FF395C;
   color: white;
   border: none;
   border-radius: 30px;
-  padding: 16px;
+  margin-top: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .login .login__submit i {
   position: absolute;
-  display: inline-block;
   width: 24px;
   height: 24px;
   font-size: 24px;
-  top: 20px;
-  left: 155px;
+  left: 180px;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+}
+.login .login__submit p {
+  font-family: "RokhBold";
+  font-size: 16px;
+  margin-right: 25px;
   color: #FFFFFF;
 }
 .login .login__submit:hover {
   background-color: #e11d48;
 }
-.login .login__submit p {
-  position: absolute;
-  top: 5px;
-  left: 119px;
-  width: 26px;
-  height: 18px;
-  font-family: "RokhBold";
-  font-size: 16px;
-  color: #FFFFFF;
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .food {
     max-width: 1024px;
-    top: 40px;
-    left: 60%;
-    transform: translateX(-50%);
-    /* width: 100%; */
+    margin-top: 40px;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
@@ -222,75 +214,58 @@ html {
     width: 50%;
   }
   .login {
-    top: 650px;
     width: 600px;
     height: 420px;
-    left: 60%;
-    transform: translateX(-50%);
+    padding: 24px;
   }
   .login img {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 110px;
   }
   .login .login__header {
-    top: 70px;
-    left: 90%;
-    transform: translateX(-50%);
-    width: 452px;
-    height: 75px;
+    margin-top: 40px;
+    width: 300px;
+    justify-content: right;
   }
   .login .login__header .icon__circle {
     width: 75px;
     height: 75px;
-    left: 130px;
   }
   .login .login__header i {
-    top: 25px;
-    left: 25px;
     font-size: 24px;
   }
   .login .login__header p {
-    top: 10px;
-    width: 150px;
-    right: 75%;
-    font-size: 22px;
+    font-size: 20px;
+    margin-right: 90px;
   }
   .login .login__description {
-    top: 150px;
-    left: 52%;
-    transform: translateX(-50%);
-    width: 800px;
-    text-align: center;
+    margin-top: 30px;
+    width: 100%;
     font-size: 20px;
   }
   .login .login__input {
-    top: 220px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 430px;
   }
   .login .login__input i {
-    width: 50px;
+    font-size: 24px;
+    margin-right: 400px;
   }
   .login .login__input input {
-    left: 210px;
-    font-size: 18px;
-    width: 180px;
+    width: 250px;
+    height: 120px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
   }
   .login .login__submit {
-    top: 310px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 430px;
+    width: 450px;
   }
   .login .login__submit i {
-    left: 230px;
+    font-size: 30px;
+    margin-left: 80px;
   }
   .login .login__submit p {
-    left: 200px;
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 25px;
   }
 }
 
