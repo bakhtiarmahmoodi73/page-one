@@ -130,40 +130,63 @@ html {
   width: 297px;
   height: 18px;
   margin-top: 12px;
-  margin-left: 35px;
+  padding-left: 70px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 14px;
+  font-family: "RokhSemiBold";
+  margin: 1px;
+}
+.login .login__description span {
   color: #000000;
+  margin: 2px;
+}
+.login .login__description1 {
+  margin-top: 0px;
+  margin-left: 215px;
+  color: #006fff;
   font-size: 14px;
   font-family: "RokhSemiBold";
 }
-.login .login__input {
-  width: 297px;
-  height: 64px;
-  background-color: rgba(222, 223, 234, 0.3490196078);
-  border-radius: 16px;
+.login .number {
   display: flex;
+  gap: 25px;
+}
+.login .number .number__digit {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 16px;
-  gap: 12px;
-}
-.login .login__input i {
-  color: rgba(0, 0, 0, 0.5019607843);
   font-size: 20px;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  margin-right: 270px;
+  background-color: rgba(222, 223, 234, 0.3490196078);
+  width: 64px;
+  height: 66px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
-.login .login__input input {
-  border: none;
-  background: transparent;
-  outline: none;
-  width: 108px;
-  height: 20px;
-  margin-left: 280px;
-  font-size: 16px;
+.login .number .number__digit:hover {
+  transform: scale(1.05);
+}
+.login .resend {
+  width: 328px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
   font-family: "RokhSemiBold";
-  color: rgba(0, 0, 0, 0.5019607843);
+}
+.login .resend .resend__message {
+  font-size: 14px;
+}
+.login .resend .resend__link {
+  color: #006fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.login .resend .resend__link:hover {
+  text-decoration: underline;
 }
 .login .login__submit {
   width: 320px;
@@ -172,7 +195,7 @@ html {
   color: white;
   border: none;
   border-radius: 30px;
-  margin-top: 50px;
+  margin-top: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
   display: flex;
@@ -215,14 +238,14 @@ html {
   }
   .login {
     width: 600px;
-    height: 420px;
-    padding: 24px;
+    height: 450px;
+    padding: 10px;
   }
   .login img {
     width: 110px;
   }
   .login .login__header {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 300px;
     justify-content: right;
   }
@@ -238,26 +261,39 @@ html {
     margin-right: 90px;
   }
   .login .login__description {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
+    font-size: 22px;
+  }
+  .login .login__description1 {
     font-size: 20px;
+    margin-left: 300px;
   }
-  .login .login__input {
-    width: 430px;
+  .login .number {
+    display: flex;
+    gap: 30px;
   }
-  .login .login__input i {
-    font-size: 24px;
-    margin-right: 400px;
-  }
-  .login .login__input input {
-    width: 250px;
-    height: 120px;
-    padding: 10px;
+  .login .number .number__digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
-    margin-left: 10px;
+    background-color: rgba(222, 223, 234, 0.3490196078);
+    width: 75px;
+    height: 65px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  .login .number .number__digit:hover {
+    transform: scale(1.05);
+  }
+  .login .resend {
+    width: 400px;
   }
   .login .login__submit {
-    width: 450px;
+    width: 420px;
   }
   .login .login__submit i {
     font-size: 30px;
@@ -269,4 +305,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=signin_3.css.map */

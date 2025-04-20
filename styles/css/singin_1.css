@@ -130,10 +130,10 @@ html {
   width: 297px;
   height: 18px;
   margin-top: 12px;
-  margin-left: 35px;
+  padding-left: 135px;
   text-align: center;
   color: #000000;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "RokhSemiBold";
 }
 .login .login__input {
@@ -269,4 +269,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=singin_1.css.map */
