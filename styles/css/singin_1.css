@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "RokhBold";
   src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
   font-weight: normal;
@@ -19,6 +25,12 @@
 @font-face {
   font-family: "RokhSemiBold";
   src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
