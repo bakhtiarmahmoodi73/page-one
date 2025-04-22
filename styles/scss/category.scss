@@ -1,0 +1,303 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+
+body,
+html {
+  @include overal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bgColorHome;
+  width: 393px;
+  height: 852px;
+  margin-top: 10px;
+}
+
+
+.container{
+    max-width: 375px;
+    margin: auto;
+    header{
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        p{
+            width: 100px;
+            height: 20px;
+            font-size: 16px;
+            font-family: "RokhSemiBold";
+            color:$blockColor;
+        }
+
+        .header__icon--right{
+            border: 1px solid $grayColor2;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 1px;
+            i {
+                display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 9px;
+              margin-right: 6px;
+              font-size: 20px;
+            }
+            
+        }
+        .header__icon--left{
+            border: 1px solid $grayColor2;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 1px;
+            i {
+                display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 4px;
+              margin-right: 8px;
+              font-size: 30px;
+            }
+        }
+    }
+   
+
+
+
+      .category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $whiteColor;
+        border-radius: 12px;
+        padding: 16px;
+        width: 345px;
+      
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+      
+        .category__backarrow {
+          font-size: 30px;
+          color: $blackColor2;
+          margin-left: 12px;
+          cursor: pointer;
+        }
+       .category__image{
+        background-color: $bgColorHome;
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+          img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          };
+        
+       }
+        .category__button {
+            background-color: $primaryColor;
+            color: $whiteColor;
+            font-family: "RokhBold";
+            border-radius: 40px;
+            padding:0px;
+            width: 71px;
+            height: 26px;
+            font-size: 12px;
+            margin-right: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          }
+      
+        .category__title {
+          display: flex;
+          align-items: center;
+         gap: 35px;
+
+          p{
+          font-family: "RokhSemiBold";
+          color: $blockColor3;
+          font-size: 14px;
+          width: 85px;
+          }
+      
+          
+        }
+      }
+      
+
+
+
+
+      
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    // width: 370px;
+  }
+  
+  
+
+  footer {
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: $whiteColor;
+    border-top: 1px solid $whiteColor;
+    width: 375px;
+    height: 70px;
+    border-radius: 12px;
+    margin-top: 20px;
+    .footer__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      color: $blackColor2;
+      font-size: 12px;
+      font-family: "RokhSemiBold";
+      margin-top: 15px;
+      gap: 10px;
+  
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 22px;
+        color: $blockColor;
+      }
+      span {
+        font-size: 12px;
+        font-size: 12px;
+        font-family: "RokhSemiBold";
+        color: $blackColor2;
+      }
+      .footer__item--category{
+        color: $primaryColor;
+      }
+    }
+  }
+  
+}
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    html, body {
+      width: 100%;
+      height: auto;
+      margin: 4px;
+      padding: 5px;
+    }
+  
+    .container {
+      max-width: 100%;
+      padding: 0px;
+      
+  
+  
+      .cards {
+        width: 100%;
+        gap: 16px;
+        margin-top: 24px;
+
+  
+        }
+      }
+  
+      footer {
+        width: 100%;
+        gap: 50px;
+        // padding: 0 12px;
+        height: 80px;
+        margin-top: 120px;
+        .footer__item {
+          font-size: 13px;
+          gap: 15px;
+          i {
+            margin-top: 0;
+            font-size: 20px;
+          }
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    
+    header {
+        width: 100%;
+        // padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        
+  
+        p {
+          font-size: 25px;
+          width: auto;
+        }
+  
+        .header__icon--right,
+        .header__icon--left {
+          width: 55px;
+          height: 55px;
+          i {
+            font-size: 30px;
+            margin: 0;
+            
+            
+          }
+        }
+      }
+  
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .category {
+      width: 100%; // برای استفاده کامل از عرض تبلت
+      padding: 12px;
+  
+      .category__backarrow {
+        font-size: 26px;
+        margin-left: 8px;
+      }
+  
+      .category__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+  
+        // img {
+        //   width: 24px;
+        //   height: 24px;
+        // }
+      }
+  
+      .category__button {
+        width: 64px;
+        height: 24px;
+        font-size: 11px;
+        margin-right: 20px;
+      }
+  
+      .category__title {
+        gap: 20px;
+  
+        p {
+          font-size: 13px;
+          width: auto; // انعطاف‌پذیرتر برای نمایش بهتر در عرض کمتر
+        }
+      }
+    }
+  }
+  
