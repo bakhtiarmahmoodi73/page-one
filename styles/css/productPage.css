@@ -28,57 +28,24 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+html,
+body {
   font-family: "RokhBold";
-  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhSemiBold";
-  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNum";
-  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNumultrabold";
-  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNumbold";
-  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-body,
-html {
-  max-width: 393px;
-  height: 900px;
-  font-family: "RokhBold";
-  text-align: center;
-  margin: auto;
+  margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  justify-content: center;
-  background-color: #fafaff;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F3F6FB;
-  width: 393px;
-  height: 852px;
-  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  opacity: 25%;
   max-width: 375px;
   margin: auto;
 }
@@ -210,7 +177,8 @@ html {
   text-decoration: line-through;
   color: rgba(0, 0, 0, 0.5019607843);
 }
-.container .cards__item--info .discounted, .container .cards__item--info .discounted1 {
+.container .cards__item--info .discounted,
+.container .cards__item--info .discounted1 {
   font-family: "RokhBold";
   font-size: 16px;
   color: #47966F;
@@ -253,8 +221,128 @@ html {
   color: rgba(0, 0, 0, 0.5019607843);
 }
 
+.bottom {
+  position: absolute;
+  margin-top: 410px;
+  background-color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+  height: 452px;
+  width: 385px;
+}
+.bottom .bottom__img {
+  margin-top: 20px;
+  margin-right: 160px;
+}
+
+.food__card {
+  text-align: center;
+}
+.food__card .food__card--wrapper {
+  position: relative;
+}
+.food__card .food__card--wrapper .badge {
+  position: absolute;
+  top: 45px;
+  right: 210px;
+  background: #00CC99;
+  color: #ffffff;
+  width: 82px;
+  height: 36px;
+  font-size: 12px;
+  font-family: "RokhFaNumultrabold";
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.food__card .food__card--wrapper .food__image {
+  width: 125px;
+  height: 125px;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+.food__card .food__title {
+  margin-right: 25px;
+  margin-top: 15px;
+  width: 317px;
+  height: 20px;
+  font-family: "RokhSemiBold";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.food__card .food__description {
+  margin-right: 10px;
+  margin-top: 15px;
+  width: 350px;
+  height: 20px;
+  font-family: "RokhSemiBold";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.food__card .line {
+  margin-top: 40px;
+}
+.food__card .price__row {
+  width: 317px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+}
+.food__card .price__row .price__text {
+  width: 95px;
+  height: 18px;
+  font-size: 16px;
+  font-family: "RokhBold";
+  color: #ff395c;
+}
+.food__card .price__row .label {
+  width: 36px;
+  height: 18px;
+  font-family: "RokhBold";
+  color: #000000;
+  font-size: 16px;
+}
+.food__card .button__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.food__card .button__row .add-to-cart {
+  width: 245px;
+  height: 56px;
+  background: #ff395c;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 52px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "RokhFaNumbold";
+}
+.food__card .button__row .fa-shopping-cart {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.food__card .button__row .favorite {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(222, 223, 234, 0.5019607843);
+  border: none;
+  border-radius: 18px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
-  html, body {
+  html,
+  body {
     width: 100%;
     height: auto;
     margin: 4px;
@@ -339,5 +427,82 @@ html {
     margin: 0;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .bottom {
+    margin-top: 400px;
+    width: 490px;
+    margin-right: 25px;
+    height: 520px;
+  }
+  .bottom .bottom__img {
+    margin-top: 24px;
+    margin-right: 210px;
+  }
+  .food__card {
+    text-align: center;
+  }
+  .food__card .food__card--wrapper .badge {
+    top: 55px;
+    right: 292px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+  .food__card .food__card--wrapper .food__image {
+    width: 180px;
+    height: 180px;
+    margin-top: 24px;
+  }
+  .food__card .food__title {
+    width: 90%;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  .food__card .food__description {
+    width: 90%;
+    font-size: 18px;
+    margin-right: 16px;
+    margin-top: 15px;
+  }
+  .food__card .line {
+    width: 430px;
+    margin-top: 40px;
+  }
+  .food__card .price__row {
+    width: 87%;
+    margin-right: 20px;
+    padding: 12px;
+  }
+  .food__card .price__row .price__text {
+    font-size: 18px;
+    width: auto;
+  }
+  .food__card .price__row .label {
+    font-size: 18px;
+    width: auto;
+  }
+  .food__card .button__row {
+    width: 100%;
+    gap: 90px;
+  }
+  .food__card .button__row .add-to-cart {
+    width: 290px;
+    height: 64px;
+    font-size: 16px;
+    border-radius: 60px;
+  }
+  .food__card .button__row .fa-shopping-cart {
+    font-size: 22px;
+    margin-left: 24px;
+  }
+  .food__card .button__row .favorite {
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+}
 
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=productPage.css.map */

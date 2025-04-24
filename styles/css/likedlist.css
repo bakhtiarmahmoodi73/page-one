@@ -28,54 +28,20 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+html,
+body {
   font-family: "RokhBold";
-  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhSemiBold";
-  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNum";
-  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNumultrabold";
-  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RokhFaNumbold";
-  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-body,
-html {
-  max-width: 393px;
-  height: 900px;
-  font-family: "RokhBold";
-  text-align: center;
-  margin: auto;
+  margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  justify-content: center;
-  background-color: #fafaff;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F3F6FB;
-  width: 393px;
-  height: 852px;
-  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -89,7 +55,7 @@ html {
   align-items: center;
 }
 .container header p {
-  width: 100px;
+  width: 150px;
   height: 20px;
   font-size: 16px;
   font-family: "RokhSemiBold";
@@ -172,7 +138,33 @@ html {
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-.container .cards__item button {
+.container .cards__item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.container .cards__item--button {
+  display: flex;
+  flex-direction: column;
+}
+.container .cards__item--button .fa__times {
+  margin-right: 8px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: none;
+}
+.container .cards__item--button .button__plus {
   background-color: #F5BC40;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -181,17 +173,7 @@ html {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  transition: 0.3s;
-}
-.container .cards__item button:hover {
-  background-color: #28a745;
-  color: white;
-}
-.container .cards__item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  object-fit: cover;
+  margin-top: 5px;
 }
 .container .cards__item--info {
   flex: 1;
@@ -252,6 +234,9 @@ html {
   font-family: "RokhSemiBold";
   color: rgba(0, 0, 0, 0.5019607843);
 }
+.container footer .footer__item .footer__item--liked {
+  color: #ff395c;
+}
 
 @media (min-width: 481px) and (max-width: 768px) {
   html, body {
@@ -300,6 +285,11 @@ html {
     height: 40px;
     font-size: 20px;
   }
+  .container .cards .cards__item .fa__times {
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+  }
   .container footer {
     width: 100%;
     gap: 50px;
@@ -320,24 +310,25 @@ html {
   }
   header {
     width: 100%;
-    padding: 0 30px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   header p {
-    font-size: 25px;
-    width: auto;
+    font-size: 60px;
+    width: 300px;
   }
   header .header__icon--right,
   header .header__icon--left {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
   }
   header .header__icon--right i,
   header .header__icon--left i {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
   }
 }
 
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=likedlist.css.map */
