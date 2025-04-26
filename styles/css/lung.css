@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumultrabold";
+  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumbold";
+  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  font-family: "RokhBold";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F6FB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+}
+.container header {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header p {
+  width: 150px;
+  height: 20px;
+  font-size: 16px;
+  font-family: "RokhSemiBold";
+  color: #000000;
+}
+.container header .header__icon--right {
+  border: 1px solid rgba(222, 223, 234, 0.3490196078);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 1px;
+}
+.container header .header__icon--right i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+  margin-right: 6px;
+  font-size: 20px;
+}
+.container header .header__icon--left {
+  border: 1px solid rgba(222, 223, 234, 0.3490196078);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 1px;
+}
+.container header .header__icon--left i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 8px;
+  font-size: 30px;
+}
+.container .languages {
+  width: 375px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.container .language {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .language span {
+  font-family: "RokhSemiBold";
+  font-size: 14px;
+  color: #000000;
+}
+.container .language .radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(222, 223, 234, 0.3490196078);
+  background-color: rgba(222, 223, 234, 0.3490196078);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .language .dot {
+  display: none;
+}
+.container .language:hover {
+  background-color: rgba(222, 223, 234, 0.3490196078);
+}
+.container .selected .radio {
+  background-color: #ff395c;
+  border-color: #f43f5e;
+}
+.container .selected .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+}
+.container footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  width: 375px;
+  height: 70px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.container footer .footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 12px;
+  font-family: "RokhSemiBold";
+  margin-top: 15px;
+  gap: 10px;
+}
+.container footer .footer__item i {
+  width: 24px;
+  height: 24px;
+  font-size: 22px;
+  color: #000000;
+}
+.container footer .footer__item span {
+  font-size: 12px;
+  font-size: 12px;
+  font-family: "RokhSemiBold";
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+    padding: 5px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .container .search {
+    width: 100%;
+    height: 44px;
+  }
+  .container .search input {
+    font-size: 14px;
+  }
+  .container .search .search__button {
+    font-size: 22px;
+  }
+  .container .cards {
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .container .cards .cards__item {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    flex-direction: row;
+  }
+  .container .cards .cards__item img {
+    width: 90px;
+    height: 90px;
+  }
+  .container .cards .cards__item .cards__item--info {
+    font-size: 15px;
+  }
+  .container .cards .cards__item .cards__item--info .cards__item--infofirst--price,
+  .container .cards .cards__item .cards__item--info .discounted {
+    font-size: 15px;
+  }
+  .container .cards .cards__item button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .container .cards .cards__item .fa__times {
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+  }
+  .container footer {
+    width: 100%;
+    gap: 50px;
+    padding: 0 12px;
+    height: 80px;
+    margin-top: 120px;
+  }
+  .container footer .footer__item {
+    font-size: 13px;
+    gap: 15px;
+  }
+  .container footer .footer__item i {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .container footer .footer__item span {
+    font-size: 10px;
+  }
+  header {
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header p {
+    font-size: 60px;
+    width: 300px;
+  }
+  header .header__icon--right,
+  header .header__icon--left {
+    width: 70px;
+    height: 70px;
+  }
+  header .header__icon--right i,
+  header .header__icon--left i {
+    font-size: 40px;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=lung.css.map */

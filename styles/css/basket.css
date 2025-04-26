@@ -1,0 +1,511 @@
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumultrabold";
+  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumbold";
+  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  font-family: "RokhBold";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F6FB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 375px;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  width: 375px;
+}
+.container header .header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 170px;
+  width: 112px;
+  height: 24px;
+}
+.container header .header__right .header__basket {
+  width: 43px;
+  height: 24px;
+  border-radius: 30px;
+  background-color: #00CC99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header .header__right .header__basket p {
+  font-family: "RokhBold";
+  font-size: 12px;
+  color: #ffffff;
+}
+.container header .header__right .header__title {
+  margin-right: 10px;
+  width: 61px;
+  height: 20px;
+  font-size: 16px;
+  font-family: "RokhSemiBold";
+  color: #000000;
+}
+.container header .header__left {
+  margin-right: 50px;
+  border: 1px solid rgba(222, 223, 234, 0.3490196078);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.container header .header__left i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 8px;
+  font-size: 30px;
+}
+.container .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.container .cards__item {
+  width: 355px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.container .cards__item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.container .cards__item--info {
+  font-family: "RokhSemiBold";
+  color: rgba(0, 0, 0, 0.8);
+}
+.container .cards__item--info .cards__item--infofirst--price {
+  color: #47966F;
+}
+.container .cards__item--button {
+  display: flex;
+  flex-direction: column;
+}
+.container .cards__item--button .fa__times {
+  margin-right: 40px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: none;
+}
+.container .cards__item--button .button__plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #F5BC40;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  font-size: 25px;
+  width: 64px;
+  height: 28px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.container .cards__item--button .button__plus button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "RokhFaNumultrabold";
+}
+.container .cards__item--button .button__plus span {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "RokhFaNumultrabold";
+}
+
+.order {
+  width: 375px;
+  margin-top: 120px;
+  margin-bottom: 10px;
+}
+.order .order__summary {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+}
+.order .order__summary .summary__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-family: "RokhBold";
+  font-size: 16px;
+  color: #000000;
+}
+.order .order__summary .summary__header .icon {
+  width: 32px;
+  height: 32px;
+  background: #F5BC40;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .order__summary .summary__header .icon i {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.order .order__summary img {
+  width: 330px;
+}
+.order .order__summary .summary__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+}
+.order .order__summary .summary__item .summary__item--price {
+  font-family: "RokhFaNum";
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  font-size: 15px;
+  color: #47966F;
+}
+.order .order__summary .summary__item .item-label {
+  font-family: "RokhSemiBold";
+  font-size: 14px;
+  color: #000000;
+}
+.order .order__summary .summary__item .item-value {
+  background-color: #00CC99;
+  width: 43px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .order__summary .summary__item .item-value--green {
+  margin-left: 115px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "RokhBold";
+  border-radius: 20px;
+}
+.order .payment {
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+.order .payment .payment__amount {
+  width: 81px;
+  height: 44px;
+  font-family: "RokhBold";
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.order .payment .payment__amount span:last-child {
+  width: 81px;
+  height: 18px;
+  display: block;
+  margin-top: 8px;
+  font-family: "RokhBold";
+  font-size: 14px;
+  color: #ff395c;
+}
+.order .payment .payment__button {
+  width: 105px;
+  height: 44px;
+  background: #ff395c;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "RokhSemiBold";
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.order .payment .payment__button:hover {
+  background: #d93b5d;
+}
+.order .payment .payment__button .arrow {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    width: 650px;
+  }
+  header .header__left {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 1px solid rgba(222, 223, 234, 0.3490196078);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header__left i {
+    font-size: 24px;
+    color: #000000;
+    margin: 0;
+  }
+  header .header__right {
+    width: 550px;
+    height: auto;
+  }
+  header .header__right .header__title {
+    width: 120px;
+    height: 20px;
+    font-size: 10px;
+    font-family: "RokhSemiBold";
+    color: #000000;
+  }
+  header .header__right .header__basket {
+    width: 100px;
+    height: 26px;
+    border-radius: 30px;
+    background-color: #00CC99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header__right .header__basket p {
+    font-family: "RokhBold";
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1;
+    margin-right: 8px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+    padding: 5px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .container .search {
+    width: 100%;
+    height: 44px;
+  }
+  .container .search input {
+    font-size: 14px;
+  }
+  .container .search .search__button {
+    font-size: 22px;
+  }
+  .container .cards {
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .container .cards .cards__item {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    flex-direction: row;
+  }
+  .container .cards .cards__item img {
+    width: 90px;
+    height: 90px;
+  }
+  .container .cards .cards__item .cards__item--info {
+    font-size: 15px;
+  }
+  .container .cards .cards__item .cards__item--info .cards__item--infofirst--price,
+  .container .cards .cards__item .cards__item--info .discounted {
+    font-size: 15px;
+  }
+  .container .cards .cards__item button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .container .cards .cards__item .fa__times {
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+  }
+  .container footer {
+    width: 100%;
+    gap: 50px;
+    padding: 0 12px;
+    height: 80px;
+    margin-top: 120px;
+  }
+  .container footer .footer__item {
+    font-size: 13px;
+    gap: 15px;
+  }
+  .container footer .footer__item i {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .container footer .footer__item span {
+    font-size: 10px;
+  }
+  header {
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header p {
+    font-size: 60px;
+    width: 300px;
+  }
+  header .header__icon--right,
+  header .header__icon--left {
+    width: 70px;
+    height: 70px;
+  }
+  header .header__icon--right i,
+  header .header__icon--left i {
+    font-size: 40px;
+    margin: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .order {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+  }
+  .order .order__summary {
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .order .order__summary .summary__header {
+    font-size: 15px;
+    gap: 10px;
+  }
+  .order .order__summary .summary__header .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .order .order__summary .summary__header .icon i {
+    font-size: 14px;
+  }
+  .order .order__summary img {
+    width: 100%;
+  }
+  .order .order__summary .summary__item {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  .order .order__summary .summary__item .summary__item--price {
+    font-size: 14px;
+    width: 80px;
+  }
+  .order .order__summary .summary__item .item-label {
+    font-size: 13px;
+  }
+  .order .order__summary .summary__item .item-value {
+    width: 40px;
+    height: 22px;
+    font-size: 11px;
+  }
+  .order .payment {
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .order .payment .payment__amount {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+  }
+  .order .payment .payment__amount span:last-child {
+    font-size: 13px;
+  }
+  .order .payment .payment__button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  .order .payment .payment__button .arrow {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=basket.css.map */
