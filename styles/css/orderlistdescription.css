@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumultrabold";
+  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumbold";
+  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhBold";
+  src: url("../../webfonts/Rokh-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhSemiBold";
+  src: url("../../webfonts/Rokh-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNum";
+  src: url("../../webfonts/RokhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumultrabold";
+  src: url("../../webfonts/RokhFaNum-UltraBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RokhFaNumbold";
+  src: url("../../webfonts/RokhFaNum-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  max-width: 393px;
+  height: 900px;
+  font-family: "RokhBold";
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 20px;
+  justify-content: center;
+  background-color: #fafaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F6FB;
+  width: 393px;
+  height: 900px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+}
+.container header {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header p {
+  width: 100px;
+  height: 20px;
+  font-size: 16px;
+  font-family: "RokhSemiBold";
+  color: #000000;
+}
+.container header .header__icon--right {
+  border: 1px solid rgba(222, 223, 234, 0.3490196078);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 1px;
+}
+.container header .header__icon--right i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+  margin-right: 6px;
+  font-size: 20px;
+}
+.container header .header__icon--left {
+  border: 1px solid rgba(222, 223, 234, 0.3490196078);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 1px;
+}
+.container header .header__icon--left i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 8px;
+  font-size: 30px;
+}
+.container .food {
+  margin-top: 20px;
+  background-color: #F3F6FB;
+  border-radius: 12px 12px 0 0;
+  height: 352px;
+  width: 385px;
+}
+.container .food__card {
+  text-align: center;
+}
+.container .food__card .food__card--wrapper {
+  position: relative;
+}
+.container .food__card .food__card--wrapper .badge {
+  position: absolute;
+  top: 45px;
+  right: 210px;
+  background: #00CC99;
+  color: #ffffff;
+  width: 82px;
+  height: 36px;
+  font-size: 12px;
+  font-family: "RokhFaNumultrabold";
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .food__card .food__card--wrapper .food__image {
+  width: 125px;
+  height: 125px;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+.container .food__card .food__title {
+  margin-right: 25px;
+  margin-top: 15px;
+  width: 317px;
+  height: 20px;
+  font-family: "RokhSemiBold";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.container .food__card .food__description {
+  margin-right: 10px;
+  margin-top: 15px;
+  width: 350px;
+  height: 20px;
+  font-family: "RokhSemiBold";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.container .food__card .price__row {
+  width: 325px;
+  margin-right: 10px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 40px;
+  background-color: #ffffff;
+}
+.container .food__card .price__row .price__text {
+  width: 95px;
+  height: 18px;
+  font-size: 16px;
+  font-family: "RokhBold";
+  color: #ff395c;
+}
+.container .food__card .price__row .label {
+  width: 36px;
+  height: 18px;
+  font-family: "RokhBold";
+  color: #000000;
+  font-size: 16px;
+}
+.container .order {
+  width: 375px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.container .order .order__summary {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+}
+.container .order .order__summary .summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-family: "RokhBold";
+  color: #000000;
+}
+.container .order .order__summary .summary__header .icon {
+  width: 32px;
+  height: 32px;
+  background: #F5BC40;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+.container .order .order__summary .summary__header .icon i {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .order .order__summary .summary__header .summary__header--title {
+  margin-left: 40px;
+  padding-left: 40px;
+  width: 130px;
+  height: 30px;
+  font-family: "RokhBold";
+  font-size: 16px;
+  color: #000000;
+}
+.container .order .order__summary .summary__header .summary__header--date {
+  font-family: "RokhSemiBold";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  width: 130px;
+  height: 30px;
+}
+.container .order .order__summary img {
+  width: 330px;
+}
+.container .order .order__summary .summary__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+}
+.container .order .order__summary .summary__item .summary__item--price {
+  font-family: "RokhFaNum";
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  font-size: 15px;
+  color: #47966F;
+}
+.container .order .order__summary .summary__item .item-label {
+  font-family: "RokhSemiBold";
+  font-size: 14px;
+  color: #000000;
+}
+.container .order .order__summary .summary__item .item-value {
+  background-color: #00CC99;
+  width: 43px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .order .order__summary .summary__item .item-value--green {
+  margin-left: 115px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "RokhBold";
+  border-radius: 20px;
+}
+.container footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  width: 375px;
+  height: 80px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+.container footer .footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 12px #F5BC40;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 25px;
+  width: 36px;
+  height: 36p;
+  font-family: "RokhSemiBold";
+  margin-top: 5px;
+  gap: 10px;
+}
+.container footer .footer__item i {
+  width: 24px;
+  height: 24px;
+  font-size: 22px;
+  color: #000000;
+}
+.container footer .footer__item span {
+  font-size: 12px;
+  font-size: 12px;
+  font-family: "RokhSemiBold";
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+    padding: 5px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .container footer {
+    width: 100%;
+    gap: 50px;
+    padding: 0 12px;
+    height: 80px;
+    margin-top: 120px;
+  }
+  .container footer .footer__item {
+    font-size: 13px;
+    gap: 15px;
+  }
+  .container footer .footer__item i {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .container footer .footer__item span {
+    font-size: 10px;
+  }
+  header {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header p {
+    font-size: 25px;
+    width: auto;
+  }
+  header .header__icon--right,
+  header .header__icon--left {
+    width: 55px;
+    height: 55px;
+  }
+  header .header__icon--right i,
+  header .header__icon--left i {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .food {
+    margin-top: 400px;
+    width: 490px;
+    margin-right: 25px;
+    height: 520px;
+  }
+  .food .bottom__img {
+    margin-top: 24px;
+    margin-right: 210px;
+  }
+  .food__card {
+    text-align: center;
+  }
+  .food__card .food__card--wrapper .badge {
+    top: 55px;
+    right: 292px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+  .food__card .food__card--wrapper .food__image {
+    width: 180px;
+    height: 180px;
+    margin-top: 24px;
+  }
+  .food__card .food__title {
+    width: 90%;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  .food__card .food__description {
+    width: 90%;
+    font-size: 18px;
+    margin-right: 16px;
+    margin-top: 15px;
+  }
+  .food__card .line {
+    width: 430px;
+    margin-top: 40px;
+  }
+  .food__card .price__row {
+    width: 87%;
+    margin-right: 20px;
+    padding: 12px;
+  }
+  .food__card .price__row .price__text {
+    font-size: 18px;
+    width: auto;
+  }
+  .food__card .price__row .label {
+    font-size: 18px;
+    width: auto;
+  }
+  .food__card .button__row {
+    width: 100%;
+    gap: 90px;
+  }
+  .food__card .button__row .add-to-cart {
+    width: 290px;
+    height: 64px;
+    font-size: 16px;
+    border-radius: 60px;
+  }
+  .food__card .button__row .fa-shopping-cart {
+    font-size: 22px;
+    margin-left: 24px;
+  }
+  .food__card .button__row .favorite {
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .order {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+  }
+  .order .order__summary {
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .order .order__summary .summary__header {
+    font-size: 15px;
+    gap: 10px;
+  }
+  .order .order__summary .summary__header .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .order .order__summary .summary__header .icon i {
+    font-size: 14px;
+  }
+  .order .order__summary img {
+    width: 100%;
+  }
+  .order .order__summary .summary__item {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  .order .order__summary .summary__item .summary__item--price {
+    font-size: 14px;
+    width: 80px;
+  }
+  .order .order__summary .summary__item .item-label {
+    font-size: 13px;
+  }
+  .order .order__summary .summary__item .item-value {
+    width: 40px;
+    height: 22px;
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=orderlistdescription.css.map */

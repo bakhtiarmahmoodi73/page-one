@@ -1,0 +1,502 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+body,
+html {
+  @include overal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bgColorHome;
+  width: 393px;
+  height: 900px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  header {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      width: 100px;
+      height: 20px;
+      font-size: 16px;
+      font-family: "RokhSemiBold";
+      color: $blockColor;
+    }
+
+    .header__icon--right {
+      border: 1px solid $grayColor2;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-right: 1px;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9px;
+        margin-right: 6px;
+        font-size: 20px;
+      }
+    }
+    .header__icon--left {
+      border: 1px solid $grayColor2;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-right: 1px;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+        margin-right: 8px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .food {
+    margin-top: 20px;
+    background-color: $bgColorHome;
+    border-radius: 12px 12px 0 0;
+    height: 352px;
+    width: 385px;
+  }
+
+  .food__card {
+    text-align: center;
+
+    .food__card--wrapper {
+      position: relative;
+
+      .badge {
+        position: absolute;
+        top: 45px;
+        right: 210px;
+        background: $greenColor2;
+        color: $whiteColor;
+        width: 82px;
+        height: 36px;
+        font-size: 12px;
+        font-family: "RokhFaNumultrabold";
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .food__image {
+        width: 125px;
+        height: 125px;
+        border-radius: 24px;
+        margin-top: 20px;
+      }
+    }
+
+    .food__title {
+      margin-right: 25px;
+      margin-top: 15px;
+      width: 317px;
+      height: 20px;
+      font-family: "RokhSemiBold";
+      font-size: 16px;
+      color: $blockColor3;
+    }
+
+    .food__description {
+      margin-right: 10px;
+      margin-top: 15px;
+      width: 350px;
+      height: 20px;
+      font-family: "RokhSemiBold";
+      font-size: 16px;
+      color: $blackColor2;
+    }
+
+    .price__row {
+      width: 325px;
+      margin-right: 10px;
+      height: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      border-radius: 8px;
+
+      margin-top: 40px;
+      background-color: $whiteColor;
+
+      .price__text {
+        width: 95px;
+        height: 18px;
+        font-size: 16px;
+        font-family: "RokhBold";
+        color: $primaryColor;
+      }
+
+      .label {
+        width: 36px;
+        height: 18px;
+        font-family: "RokhBold";
+        color: $blockColor;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .order {
+    width: 375px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    .order__summary {
+      background-color: $whiteColor;
+      border-radius: 16px;
+      padding: 20px;
+
+      .summary__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-family: "RokhBold";
+        color: $blockColor;
+
+        .icon {
+          width: 32px;
+          height: 32px;
+          background: $AcsentColor;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2px;
+
+          i {
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            color: $whiteColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .summary__header--title {
+          margin-left: 40px;
+          padding-left: 40px;
+          width: 130px;
+          height: 30px;
+          font-family: "RokhBold";
+          font-size: 16px;
+          color: $blockColor;
+        }
+        .summary__header--date {
+          font-family: "RokhSemiBold";
+          font-size: 14px;
+          color: $blackColor2;
+          width: 130px;
+          height: 30px;
+        }
+      }
+      img {
+        width: 330px;
+      }
+      .summary__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        font-size: 14px;
+        .summary__item--price {
+          font-family: "RokhFaNum";
+          width: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 18px;
+          font-size: 15px;
+          color: $greencolor;
+        }
+
+        .item-label {
+          font-family: "RokhSemiBold";
+          font-size: 14px;
+
+          color: $blockColor;
+        }
+
+        .item-value {
+          background-color: $greenColor2;
+          width: 43px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &--green {
+            margin-left: 115px;
+
+            color: $whiteColor;
+            font-size: 12px;
+            font-family: "RokhBold";
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $whiteColor;
+    border-top: 1px solid $whiteColor;
+    width: 375px;
+    height: 80px;
+    border-radius: 12px;
+    margin-top: 30px;
+    .footer__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      color: $blackColor2;
+      font-size: 12px $AcsentColor;
+      color: $whiteColor;
+      border: 2px solid $whiteColor;
+      border-radius: 50%;
+      font-size: 25px;
+      width: 36px;
+      height: 36p;
+      font-family: "RokhSemiBold";
+      margin-top: 5px;
+      gap: 10px;
+
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 22px;
+        color: $blockColor;
+      }
+      span {
+        font-size: 12px;
+        font-size: 12px;
+        font-family: "RokhSemiBold";
+        color: $blackColor2;
+      }
+      //   .footer__item--search{
+      //     color: $primaryColor;
+      //   }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0px;
+
+    footer {
+      width: 100%;
+      gap: 50px;
+      padding: 0 12px;
+      height: 80px;
+      margin-top: 120px;
+      .footer__item {
+        font-size: 13px;
+        gap: 15px;
+        i {
+          margin-top: 0;
+          font-size: 20px;
+        }
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  header {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 25px;
+      width: auto;
+    }
+
+    .header__icon--right,
+    .header__icon--left {
+      width: 55px;
+      height: 55px;
+      i {
+        font-size: 30px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .food {
+    margin-top: 400px;
+    width: 490px;
+    margin-right: 25px;
+    height: 520px;
+
+    .bottom__img {
+      margin-top: 24px;
+      margin-right: 210px;
+    }
+  }
+
+  .food__card {
+    text-align: center;
+
+    .food__card--wrapper {
+      .badge {
+        top: 55px;
+        right: 292px;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 30px;
+      }
+
+      .food__image {
+        width: 180px;
+        height: 180px;
+        margin-top: 24px;
+      }
+    }
+
+    .food__title {
+      width: 90%;
+      font-size: 20px;
+      margin-right: 25px;
+      margin-top: 20px;
+    }
+
+    .food__description {
+      width: 90%;
+      font-size: 18px;
+      margin-right: 16px;
+      margin-top: 15px;
+    }
+
+    .line {
+      width: 430px;
+      margin-top: 40px;
+    }
+
+    .price__row {
+      width: 87%;
+      margin-right: 20px;
+      padding: 12px;
+
+      .price__text {
+        font-size: 18px;
+        width: auto;
+      }
+
+      .label {
+        font-size: 18px;
+        width: auto;
+      }
+    }
+
+    .button__row {
+      width: 100%;
+      gap: 90px;
+
+      .add-to-cart {
+        width: 290px;
+        height: 64px;
+        font-size: 16px;
+        border-radius: 60px;
+      }
+
+      .fa-shopping-cart {
+        font-size: 22px;
+        margin-left: 24px;
+      }
+
+      .favorite {
+        width: 64px;
+        height: 64px;
+        font-size: 22px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .order {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+
+    .order__summary {
+      padding: 16px;
+      border-radius: 12px;
+
+      .summary__header {
+        font-size: 15px;
+        gap: 10px;
+
+        .icon {
+          width: 28px;
+          height: 28px;
+
+          i {
+            font-size: 14px;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .summary__item {
+        padding: 10px 0;
+        font-size: 13px;
+
+        .summary__item--price {
+          font-size: 14px;
+          width: 80px;
+        }
+
+        .item-label {
+          font-size: 13px;
+        }
+
+        .item-value {
+          width: 40px;
+          height: 22px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
