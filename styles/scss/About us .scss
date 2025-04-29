@@ -1,0 +1,571 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+body,
+html {
+  @include overal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bgColorHome;
+  width: 393px;
+  height: 970px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  nav {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      width: 50px;
+      height: 20px;
+      font-size: 16px;
+      font-family: "RokhSemiBold";
+      color: $blockColor;
+    }
+
+    .header__icon--right {
+      border: 1px solid $grayColor2;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-right: 1px;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9px;
+        margin-right: 6px;
+        font-size: 20px;
+      }
+    }
+    .header__icon--left {
+      border: 1px solid $grayColor2;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-right: 1px;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+        margin-right: 8px;
+        font-size: 30px;
+      }
+    }
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    .icon__right {
+      border: 1px solid $grayColor2;
+      background-color: $whiteColor;
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .heaader__image {
+      display: flex;
+      width: 119px;
+      height: 33px;
+      margin-left: 10px;
+     
+      .header__description {
+        padding-top: 10px;
+        margin-left: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p {
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+        }
+        .header__description--title {
+          width: 75px;
+          font-size: 14px;
+          font-family: "RokhSemiBold";
+          padding-right: 2px;
+        }
+        .header__description--subtitle {
+          width: 100px;
+          font-size: 12px;
+          font-family: "RokhSemiBold";
+          color: $blackColor2;
+        }
+      }
+    }
+    .icon__left {
+      border: 1px solid $grayColor2;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+    }
+
+    i {
+      width: 24px;
+      height: 24px;
+      font-size: 25px;
+    }
+  }
+
+  .card {
+    background: $whiteColor;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: 360px;
+    height: 116px;
+
+    margin-top: 20px;
+  }
+  .card__image {
+    position: absolute;
+    top: 340px;
+    img {
+      width: 340px;
+      margin-right: 10px;
+    }
+  }
+  .card__itemfirst {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 80px;
+    margin-right: 10px;
+    .right {
+      width: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+      }
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+    .left {
+      font-size: 10px;
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blueColor;
+      }
+    }
+  }
+  .card__itemsecond {
+    position: absolute;
+    top: 360px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    .card__itemsecondright {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+      gap: 8px;
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+      }
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+    .left {
+      font-size: 10px;
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+  }
+  .label {
+    width: 345px;
+    font-family: "RokhBold";
+    font-size: 16px;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 40px;
+  }
+}
+.label__social {
+  width: 345px;
+  font-family: "RokhBold";
+  font-size: 16px;
+  display: flex;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+.social {
+  background: $whiteColor;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  height: 116px;
+  margin-top: 20px;
+  .social--first {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 80px;
+    padding-left: 80px;
+    .social--right {
+      width: 170px;
+      display: flex;
+      justify-content: first baseline;
+      padding-right: 20px;
+      align-items: center;
+      gap: 5px;
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+      }
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+    .social--left {
+      font-size: 10px;
+    }
+  }
+  .social--image {
+    position: absolute;
+    width: 350px;
+    top: 590px;
+    margin-right: 10px;
+  }
+  .social--itemsecond {
+    position: absolute;
+    top: 610px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    .social--itemsecondright {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+      gap: 8px;
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+      }
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+    .social--left {
+      font-size: 10px;
+    }
+  }
+}
+.address {
+  max-width: 750px;
+  margin: 20px auto;
+  .address__title {
+    display: flex;
+    padding: 4px;
+    font-size: 16;
+    font-family: "RokhBold";
+    margin-bottom: 20px;
+    color: $blockColor;
+  }
+}
+.card {
+  background-color: $whiteColor;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .card__content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    .icon {
+      background-color: $AcsentColor;
+      padding: 10px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 26px;
+        color: $whiteColor;
+      }
+    }
+    .address__text {
+      font-family: "RokhSemiBold";
+      font-size: 14px;
+      color: $blockColor;
+    }
+  }
+  .edit__button {
+    background-color: $greenColor2;
+    color: $whiteColor;
+    width: 130px;
+    height: 36px;
+    border: none;
+    padding: 10px 20px;
+    font-family: "RokhBold";
+    font-size: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #00a978;
+    }
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: $whiteColor;
+  border-top: 1px solid $whiteColor;
+  width: 400px;
+  height: 70px;
+  border-radius: 12px;
+  margin-top: 20px;
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: $blackColor2;
+    font-size: 12px;
+    font-family: "RokhSemiBold";
+    margin-top: 15px;
+    gap: 10px;
+
+    i {
+      width: 24px;
+      height: 24px;
+      font-size: 22px;
+      color: $blockColor;
+    }
+    span {
+      font-size: 12px;
+      font-size: 12px;
+      font-family: "RokhSemiBold";
+      color: $blackColor2;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+
+    header {
+      flex-direction: row;
+
+      .heaader__image {
+        width: auto;
+        height: auto;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .header__description {
+          .header__description--title {
+            font-size: 16px;
+          }
+          .header__description--subtitle {
+            font-size: 14px;
+          }
+        }
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  footer {
+    width: 425px;
+    height: auto;
+    flex-wrap: nowrap;
+    padding: 1rem 0;
+    justify-content: space-evenly;
+    padding: 5 18px;
+    gap: 20px;
+    .footer__item {
+      margin-top: 0;
+      gap: 5px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    background: $whiteColor;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 16px;
+    position: relative;
+  }
+
+  .card__image {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+  }
+
+  .card__itemfirst {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      i {
+        font-size: 24px;
+      }
+
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+
+    .left {
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blueColor;
+      }
+    }
+  }
+
+  .card__itemsecond {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    .card__itemsecondright {
+      display: flex;
+      align-items: center;
+
+      gap: 8px;
+
+      i {
+        font-size: 24px;
+      }
+
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+
+    .left {
+      p {
+        font-family: "RokhSemiBold";
+        font-size: 14px;
+        color: $blockColor;
+      }
+    }
+  }
+
+  .label {
+    width: 100%;
+    font-family: "RokhBold";
+    font-size: 16px;
+    margin-top: 24px;
+    text-align: right;
+  }
+}
