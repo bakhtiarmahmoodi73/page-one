@@ -60,14 +60,11 @@
 }
 body,
 html {
-  max-width: 393px;
   height: 900px;
   font-family: "RokhBold";
-  text-align: center;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
-  margin-bottom: 20px;
-  justify-content: center;
+  margin-bottom: 10px;
   background-color: #fafaff;
   display: flex;
   flex-direction: column;

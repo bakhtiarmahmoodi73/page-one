@@ -2,15 +2,12 @@
 @import "fonts";
 
 @mixin overal {
-  // position: relative;
-  max-width: 393px;
   height: 900px;
-  font-family: 'RokhBold';  
-  text-align: center;
-  margin: auto;
+  font-family: "RokhBold";
+  margin: 0 auto;
   padding: 0;
-  margin-bottom: 20px;
-  justify-content: center;
+  margin-bottom: 10px;
   background-color: $bgColor;
-  
+
+ 
 }

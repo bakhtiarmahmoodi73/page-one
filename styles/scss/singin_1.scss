@@ -1,6 +1,11 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body,
 html {
@@ -8,10 +13,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .food {
-  margin-top: 62.21px;
+  margin: 0 auto;
+  margin-top: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
@@ -19,8 +26,8 @@ html {
   align-items: center;
 
   .food__item {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 92.93px;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -54,8 +61,9 @@ html {
 }
 
 .login {
+  margin: 0 auto;
   margin-top: 50px;
-  width: 360px;
+
   height: 390px;
   padding: 16px;
   background-color: $whiteColor;
@@ -63,22 +71,22 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
 
   img {
     width: 57px;
     margin-top: 16px;
+    margin-right: 120px;
   }
 
   .login__header {
-    width: 162px;
     height: 48px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+
     margin-top: 10px;
-    margin-left: 159px;
 
     .icon__circle {
       width: 48px;
@@ -88,7 +96,7 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 114px;
+      margin-left: 10px;
     }
 
     i {
@@ -97,22 +105,13 @@ html {
     }
 
     p {
-      position: absolute;
-      width: 106px;
-      margin-right: 65px;
-      margin-top: 18px;
-      height: 26px;
       font-size: 20px;
       font-family: "RokhBold";
     }
   }
 
   .login__description {
-    width: 297px;
-    height: 18px;
     margin-top: 12px;
-    padding-left: 135px;
-    text-align: center;
     color: $blockColor;
     font-size: 18px;
     font-family: "RokhSemiBold";
@@ -124,26 +123,22 @@ html {
     background-color: $grayColor2;
     border-radius: 16px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    gap: 12px;
 
     i {
       color: $blackColor2;
       font-size: 20px;
       width: 24px;
       height: 24px;
-      position: absolute;
-      margin-right: 270px;
     }
 
     input {
       border: none;
       background: transparent;
       outline: none;
-      width: 108px;
       height: 20px;
-      margin-left: 280px;
       font-size: 16px;
       font-family: "RokhSemiBold";
       color: $blackColor2;
@@ -151,7 +146,7 @@ html {
   }
 
   .login__submit {
-    width: 320px;
+    width: 300px;
     height: 64px;
     background-color: $primaryColor;
     color: white;
@@ -163,14 +158,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 
     i {
-      position: absolute;
       width: 24px;
       height: 24px;
       font-size: 24px;
-      left: 180px;
       transform: translateX(-50%);
       color: $whiteColor;
     }
@@ -192,12 +184,10 @@ html {
   .food {
     max-width: 1024px;
     margin-top: 40px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
 
     .food__item {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
 
       img {
         width: 50%;
@@ -206,18 +196,18 @@ html {
   }
 
   .login {
-    width: 600px;
+    max-width: 768px;
     height: 420px;
     padding: 24px;
 
     img {
+      margin-right: 170px;
       width: 110px;
     }
 
     .login__header {
+      display: flex;
       margin-top: 40px;
-      width: 300px;
-      justify-content: right;
       .icon__circle {
         width: 75px;
         height: 75px;
@@ -229,7 +219,6 @@ html {
 
       p {
         font-size: 20px;
-        margin-right: 90px;
       }
     }
 
@@ -241,11 +230,9 @@ html {
 
     .login__input {
       width: 430px;
-      
 
       i {
         font-size: 24px;
-        margin-right: 400px;
       }
 
       input {
@@ -253,21 +240,20 @@ html {
         height: 120px;
         padding: 10px;
         font-size: 20px;
-        margin-left: 10px;
       }
     }
 
     .login__submit {
-      width: 450px;
+      margin-top: 20px;
+      width: 430px;
 
       i {
-        font-size: 30px;
-        margin-left: 80px;
+        font-size: 25px;
+        margin-left: 10px;
       }
 
       p {
         font-size: 20px;
-        margin-top: 25px;
       }
     }
   }
