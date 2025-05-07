@@ -45,11 +45,11 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
 }
 .container header {
-  width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,6 @@ body {
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 345px;
   height: 80px;
   margin-top: 30px;
 }
@@ -164,7 +163,6 @@ body {
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  width: 360px;
   height: 116px;
   margin-top: 20px;
 }
@@ -273,164 +271,6 @@ body {
 }
 .container footer .footer__item .footer__item--liked {
   color: #ff395c;
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  html,
-  body {
-    width: 100%;
-    height: auto;
-    margin: 4px;
-    padding: 5px;
-  }
-  .container {
-    max-width: 100%;
-    padding: 0px;
-  }
-  .container .search {
-    width: 100%;
-    height: 44px;
-  }
-  .container .search input {
-    font-size: 14px;
-  }
-  .container .search .search__button {
-    font-size: 22px;
-  }
-  .container .cards {
-    gap: 16px;
-    margin-top: 24px;
-  }
-  .container .cards .cards__item {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    flex-direction: row;
-  }
-  .container .cards .cards__item img {
-    width: 90px;
-    height: 90px;
-  }
-  .container .cards .cards__item .cards__item--info {
-    font-size: 15px;
-  }
-  .container .cards .cards__item .cards__item--info .cards__item--infofirst--price,
-  .container .cards .cards__item .cards__item--info .discounted {
-    font-size: 15px;
-  }
-  .container .cards .cards__item button {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  .container .cards .cards__item .fa__times {
-    width: 24px;
-    height: 24px;
-    font-size: 15px;
-  }
-  .container footer {
-    width: 400px;
-    margin: 0 30px;
-    height: 80px;
-    margin-top: 120px;
-  }
-  .container footer .footer__item {
-    font-size: 13px;
-    gap: 15px;
-  }
-  .container footer .footer__item i {
-    margin-top: 0;
-    font-size: 20px;
-  }
-  .container footer .footer__item span {
-    font-size: 10px;
-  }
-  header {
-    width: 100%;
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header p {
-    font-size: 60px;
-    width: 300px;
-  }
-  header .header__icon--right,
-  header .header__icon--left {
-    width: 70px;
-    height: 70px;
-  }
-  header .header__icon--right i,
-  header .header__icon--left i {
-    font-size: 40px;
-    margin: 0;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .card {
-    width: 100%;
-    max-width: 345px;
-    height: 80px;
-    margin: 30px auto 0;
-    padding: 16px;
-    border-radius: 16px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .card .avatar {
-    width: 64px;
-    height: 64px;
-    margin-left: 16px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .card .card__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .card .card__info .name {
-    font-size: 16px;
-    font-family: "RokhBold";
-    color: #000000;
-    margin: 0;
-  }
-  .card .card__info .address {
-    font-size: 14px;
-    font-family: "RokhSemiBold";
-    color: rgba(0, 0, 0, 0.5019607843);
-    margin-top: 8px;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .neworder__button {
-    width: 500px;
-    height: 64px;
-    padding: 12px 28px;
-    border-radius: 60px;
-    margin-top: 24px;
-    margin-right: 50px;
-    font-size: 17px;
-  }
-  .neworder__button .icon {
-    width: 28px;
-    height: 28px;
-    font-size: 20px;
-  }
-  .neworder__button .text {
-    font-size: 17px;
-  }
-  .label {
-    width: 450px;
-    font-family: "RokhBold";
-    font-size: 16px;
-    padding-right: 40px;
-    margin-top: 40px;
-  }
 }
 
 /*# sourceMappingURL=profile.css.map */

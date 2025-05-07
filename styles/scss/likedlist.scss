@@ -19,10 +19,10 @@ body {
 
 
 .container{
-    max-width: 375px;
-    margin: auto;
+    
+    margin:0 auto;
     header{
-        width: 375px;
+        // width: 375px;
         display: flex;
         justify-content: space-between;
         align-items: center;

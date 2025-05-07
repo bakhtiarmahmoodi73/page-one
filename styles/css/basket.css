@@ -31,12 +31,11 @@
 html,
 body {
   font-family: "RokhBold";
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F3F6FB;
+  margin: 0 10px;
 }
 
 * {
@@ -45,12 +44,11 @@ body {
 }
 
 .container {
-  max-width: 375px;
+  margin: 0 auto;
 }
 .container header {
   display: flex;
   align-items: center;
-  width: 375px;
 }
 .container header .header__right {
   display: flex;

@@ -76,11 +76,9 @@ html {
 }
 
 .container {
-  max-width: 375px;
   margin: auto;
 }
 .container header {
-  width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,9 +315,6 @@ html {
   }
   header {
     width: 100%;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
   }
   header p {
     font-size: 25px;

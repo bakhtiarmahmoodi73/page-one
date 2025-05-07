@@ -10,17 +10,16 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: $bgColorHome;
-  width: 393px;
+  // width: 393px;
   height: 852px;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
 
 .container{
-    max-width: 375px;
-    margin: auto;
+    margin:0 10px;
     header{
-        width: 375px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -155,7 +154,7 @@ html {
     justify-content: space-around;
     background-color: $whiteColor;
     border-top: 1px solid $whiteColor;
-    width: 375px;
+    // width: 375px;
     height: 70px;
     border-radius: 12px;
     margin-top: 20px;
@@ -196,8 +195,7 @@ html {
     html, body {
       width: 100%;
       height: auto;
-      margin: 4px;
-      padding: 5px;
+     
     }
   
     .container {
@@ -264,7 +262,7 @@ html {
   
   @media (min-width: 481px) and (max-width: 768px) {
     .category {
-      width: 100%; // برای استفاده کامل از عرض تبلت
+      width: 100%; 
       padding: 12px;
   
       .category__backarrow {
@@ -277,10 +275,7 @@ html {
         height: 80px;
         border-radius: 8px;
   
-        // img {
-        //   width: 24px;
-        //   height: 24px;
-        // }
+       
       }
   
       .category__button {
@@ -295,7 +290,7 @@ html {
   
         p {
           font-size: 13px;
-          width: auto; // انعطاف‌پذیرتر برای نمایش بهتر در عرض کمتر
+          width: auto;
         }
       }
     }

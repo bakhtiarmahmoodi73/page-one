@@ -58,6 +58,12 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
   height: 900px;
@@ -69,6 +75,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .food {
@@ -111,8 +118,8 @@ html {
 }
 
 .login {
+  margin: 0 auto;
   margin-top: 50px;
-  width: 360px;
   height: 390px;
   padding: 16px;
   background-color: #ffffff;
@@ -120,21 +127,20 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
 }
 .login img {
   width: 57px;
   margin-top: 16px;
+  margin-right: 140px;
 }
 .login .login__header {
-  width: 162px;
   height: 48px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   margin-top: 10px;
-  margin-left: 159px;
 }
 .login .login__header .icon__circle {
   width: 48px;
@@ -144,31 +150,21 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 114px;
+  margin-left: 10px;
 }
 .login .login__header i {
   color: #ffffff;
   font-size: 20px;
 }
 .login .login__header p {
-  position: absolute;
-  width: 106px;
-  margin-right: 65px;
-  margin-top: 18px;
-  height: 26px;
   font-size: 20px;
   font-family: "RokhBold";
 }
 .login .login__description {
-  width: 297px;
-  height: 18px;
   margin-top: 12px;
-  padding-left: 70px;
-  text-align: center;
   color: rgba(0, 0, 0, 0.5019607843);
   font-size: 14px;
   font-family: "RokhSemiBold";
-  margin: 1px;
 }
 .login .login__description span {
   color: #000000;
@@ -234,14 +230,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .login .login__submit i {
-  position: absolute;
   width: 24px;
   height: 24px;
   font-size: 24px;
-  left: 180px;
   transform: translateX(-50%);
   color: #ffffff;
 }
@@ -257,7 +250,6 @@ html {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .food {
-    max-width: 1024px;
     margin-top: 40px;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
@@ -276,11 +268,10 @@ html {
   }
   .login img {
     width: 110px;
+    margin-right: 250px;
   }
   .login .login__header {
     margin-top: 20px;
-    width: 300px;
-    justify-content: right;
   }
   .login .login__header .icon__circle {
     width: 75px;
@@ -291,7 +282,6 @@ html {
   }
   .login .login__header p {
     font-size: 20px;
-    margin-right: 90px;
   }
   .login .login__description {
     margin-top: 20px;
@@ -329,12 +319,10 @@ html {
     width: 420px;
   }
   .login .login__submit i {
-    font-size: 30px;
-    margin-left: 80px;
+    font-size: 25px;
   }
   .login .login__submit p {
     font-size: 20px;
-    margin-top: 25px;
   }
 }
 

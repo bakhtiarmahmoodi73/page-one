@@ -17,10 +17,11 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  margin: auto;
+ box-sizing: border-box;
+  width: 100%;
+  margin:0 auto;
   header {
-    width: 375px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,7 +74,7 @@ body {
     border-radius: 16px;
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 345px;
+    // width: 345px;
     height: 80px;
     margin-top: 30px;
 
@@ -147,7 +148,7 @@ body {
     background: $whiteColor;
     border-radius: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    width: 360px;
+    // width: 360px;
     height: 116px;
 
     margin-top: 20px;
@@ -268,185 +269,4 @@ body {
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  html,
-  body {
-    width: 100%;
-    height: auto;
-    margin: 4px;
-    padding: 5px;
-  }
 
-  .container {
-    max-width: 100%;
-    padding: 0px;
-
-    .search {
-      width: 100%;
-      height: 44px;
-
-      input {
-        font-size: 14px;
-      }
-
-      .search__button {
-        font-size: 22px;
-      }
-    }
-
-    .cards {
-      gap: 16px;
-      margin-top: 24px;
-
-      .cards__item {
-        width: 100%;
-        height: auto;
-        padding: 12px;
-        flex-direction: row;
-
-        img {
-          width: 90px;
-          height: 90px;
-        }
-
-        .cards__item--info {
-          font-size: 15px;
-
-          .cards__item--infofirst--price,
-          .discounted {
-            font-size: 15px;
-          }
-        }
-
-        button {
-          width: 40px;
-          height: 40px;
-          font-size: 20px;
-        }
-        .fa__times {
-          width: 24px;
-          height: 24px;
-          font-size: 15px;
-        }
-      }
-    }
-
-    footer {
-      width: 400px;
-      margin: 0 30px;
-
-      height: 80px;
-      margin-top: 120px;
-      .footer__item {
-        font-size: 13px;
-        gap: 15px;
-        i {
-          margin-top: 0;
-          font-size: 20px;
-        }
-        span {
-          font-size: 10px;
-        }
-      }
-    }
-  }
-
-  header {
-    width: 100%;
-
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-      font-size: 60px;
-      width: 300px;
-    }
-
-    .header__icon--right,
-    .header__icon--left {
-      width: 70px;
-      height: 70px;
-
-      i {
-        font-size: 40px;
-        margin: 0;
-      }
-    }
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .card {
-    width: 100%;
-    max-width: 345px;
-    height: 80px;
-    margin: 30px auto 0;
-    padding: 16px;
-    border-radius: 16px;
-    background-color: $whiteColor;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .avatar {
-      width: 64px;
-      height: 64px;
-      margin-left: 16px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .card__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .name {
-        font-size: 16px;
-        font-family: "RokhBold";
-        color: $blockColor;
-        margin: 0;
-      }
-
-      .address {
-        font-size: 14px;
-        font-family: "RokhSemiBold";
-        color: $blackColor2;
-        margin-top: 8px;
-      }
-    }
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .neworder__button {
-    width: 500px;
-    height: 64px;
-    padding: 12px 28px;
-    border-radius: 60px;
-    margin-top: 24px;
-    margin-right: 50px;
-    font-size: 17px;
-
-    .icon {
-      width: 28px;
-      height: 28px;
-      font-size: 20px;
-    }
-
-    .text {
-      font-size: 17px;
-    }
-  }
-  .label{
-    width: 450px;
-    font-family: "RokhBold";
-    font-size: 16px;
-    padding-right: 40px;
-    margin-top: 40px;
-   }
-  
-}

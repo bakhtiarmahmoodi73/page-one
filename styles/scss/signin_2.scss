@@ -2,15 +2,19 @@
 @import "variables";
 @import "mixins";
 
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body,
 html {
   @include overal;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
-
 .food {
   margin-top: 62.21px;
   display: grid;
@@ -18,7 +22,6 @@ html {
   gap: 3px;
   justify-items: center;
   align-items: center;
-
   .food__item {
     width: 120px;
     height: 120px;
@@ -32,19 +35,16 @@ html {
     opacity: 32%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, opacity 0.3s ease;
-
     img {
       width: 50%;
       height: auto;
       object-fit: contain;
     }
-
     &:hover {
       transform: scale(1.05);
       opacity: 1;
     }
   }
-
   .food__item:nth-child(2),
   .food__item:nth-child(4),
   .food__item:nth-child(5),
@@ -53,10 +53,9 @@ html {
     opacity: 72%;
   }
 }
-
 .login {
+  margin: 0 auto;
   margin-top: 50px;
-  width: 360px;
   height: 390px;
   padding: 16px;
   background-color: $whiteColor;
@@ -64,23 +63,19 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-
   img {
     width: 57px;
     margin-top: 16px;
+    margin-right: 140px;
   }
-
   .login__header {
-    width: 162px;
     height: 48px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
     margin-top: 10px;
-    margin-left: 159px;
-
     .icon__circle {
       width: 48px;
       height: 48px;
@@ -89,35 +84,22 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 114px;
+      margin-left: 10px;
     }
-
     i {
       color: $whiteColor;
       font-size: 20px;
     }
-
     p {
-      position: absolute;
-      width: 106px;
-      margin-right: 65px;
-      margin-top: 18px;
-      height: 26px;
       font-size: 20px;
       font-family: "RokhBold";
     }
   }
-
   .login__description {
-    width: 297px;
-    height: 18px;
     margin-top: 12px;
-    padding-left: 70px;
-    text-align: center;
     color: $blackColor2;
     font-size: 14px;
     font-family: "RokhSemiBold";
-    margin: 1px;
     span {
       color: $blockColor;
       margin: 2px;
@@ -130,15 +112,10 @@ html {
     font-size: 14px;
     font-family: "RokhSemiBold";
   }
-   
-
-
-.number {
+  .number {
     display: flex;
     gap: 25px;
-  
     .number__digit {
-    
       display: flex;
       justify-content: center;
       align-items: center;
@@ -148,46 +125,33 @@ html {
       height: 66px;
       border-radius: 16px;
       cursor: pointer;
-      
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease;
-      
       &:hover {
         transform: scale(1.05);
       }
     }
-  
-    
   }
-
-  
-.resend {
+  .resend {
     width: 328px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     margin-top: 10px;
     font-family: "RokhSemiBold";
-  
     .resend__message {
       font-size: 14px;
     }
-  
     .resend__link {
       color: $blueColor;
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
-  
       &:hover {
         text-decoration: underline;
       }
     }
   }
-
-
-
   .login__submit {
     width: 320px;
     height: 64px;
@@ -201,14 +165,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-
     i {
-      position: absolute;
       width: 24px;
       height: 24px;
       font-size: 24px;
-      left: 180px;
       transform: translateX(-50%);
       color: $whiteColor;
     }
@@ -228,11 +188,9 @@ html {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .food {
-    max-width: 1024px;
     margin-top: 40px;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-
     .food__item {
       width: 200px;
       height: 200px;
@@ -242,58 +200,39 @@ html {
       }
     }
   }
-
   .login {
     width: 600px;
     height: 450px;
     padding: 10px;
-
     img {
       width: 110px;
+      margin-right: 250px;
     }
-
     .login__header {
       margin-top: 20px;
-      width: 300px;
-      justify-content: right;
       .icon__circle {
         width: 75px;
         height: 75px;
       }
-
       i {
         font-size: 24px;
       }
-
       p {
         font-size: 20px;
-        margin-right: 90px;
       }
     }
-
     .login__description {
       margin-top: 20px;
       width: 100%;
       font-size: 22px;
     }
-    .login__description1{
-        font-size: 20px;
-        margin-left: 300px;
+    .login__description1 {
+      font-size: 20px;
+      margin-left: 300px;
     }
-    // .number{
-    //     background-color: #e11d48;
-    //     width: 500px;
-    //     gap: 30px;
-    // }
-    // .number__digit{
-    //     width: 150px;
-    //     height: 110px;
-    //     font-size: 80px;
-    // }
     .number {
       display: flex;
       gap: 30px;
-  
       .number__digit {
         display: flex;
         justify-content: center;
@@ -306,31 +245,24 @@ html {
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease;
-  
         &:hover {
           transform: scale(1.05);
         }
       }
     }
-
-    
-.resend {
-  width: 400px;
-
-}
-
+    .resend {
+      width: 400px;
+    }
 
     .login__submit {
       width: 420px;
 
       i {
-        font-size: 30px;
-        margin-left: 80px;
+        font-size: 25px;
       }
 
       p {
         font-size: 20px;
-        margin-top: 25px;
       }
     }
   }

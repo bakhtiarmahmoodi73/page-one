@@ -58,6 +58,12 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
   height: 900px;
@@ -69,6 +75,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .food {
@@ -112,7 +119,6 @@ html {
 
 .login {
   margin-top: 50px;
-  width: 360px;
   height: 390px;
   padding: 16px;
   background-color: #ffffff;
@@ -185,7 +191,7 @@ html {
   width: 24px;
   height: 24px;
   position: absolute;
-  margin-right: 270px;
+  margin-right: 250px;
 }
 .login .login__input input {
   border: none;
@@ -280,7 +286,7 @@ html {
   }
   .login .login__input i {
     font-size: 24px;
-    margin-right: 400px;
+    margin-right: 380px;
   }
   .login .login__input input {
     width: 250px;

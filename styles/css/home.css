@@ -70,33 +70,28 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: #F3F6FB;
-  width: 393px;
   height: 852px;
   margin-top: 10px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 375px;
-  margin: auto;
+  margin: 0 auto;
 }
 .container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  color: #333;
+  margin-bottom: 20px;
 }
 .container header .icon__right {
+  display: flex;
   border: 1px solid rgba(222, 223, 234, 0.3490196078);
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  margin-right: 1px;
 }
 .container header .icon__right i {
-  justify-content: center;
-  align-items: center;
   margin-top: 1px;
   margin-right: 8px;
   font-size: 20px;
@@ -169,13 +164,15 @@ html {
   display: flex;
   flex-direction: column;
   width: 168px;
-  height: 100px;
-  padding: 0;
-  margin: 0;
+  gap: 0px;
+  line-height: 1px;
   margin-left: 40px;
-  padding-top: 12px;
+  padding: 0;
+  box-sizing: border-box;
 }
 .promo__banner .promo__banner--text .promo__banner--title {
+  padding: 0;
+  margin: 0;
   font-size: 12px;
   font-family: "RokhFaNum";
   color: white;
@@ -184,17 +181,15 @@ html {
   font-size: 18px;
 }
 .promo__banner .promo__banner--text .promo__banner--subtitle {
-  position: absolute;
-  margin-top: 33px;
-  margin-right: 20px;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   font-family: "RokhFaNum";
   color: white;
 }
 .promo__banner .promo__banner--text .promo__banner--note {
-  position: absolute;
-  margin-top: 73px;
-  margin-right: 20px;
+  padding: 0;
+  margin: 0;
   font-size: 12px;
   font-family: "RokhFaNum";
   color: white;
@@ -378,15 +373,10 @@ footer .footer__item span {
   body {
     width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0 1rem;
+    box-sizing: border-box;
   }
   .container {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-  .container header {
-    flex-direction: row;
+    box-sizing: border-box;
   }
   .container header .heaader__image {
     width: auto;
@@ -406,26 +396,15 @@ footer .footer__item span {
     font-size: 13px;
   }
   .promo__banner {
-    flex-direction: row;
     width: 100%;
+    padding: 0 8px;
     height: auto;
-    padding: 1rem;
-  }
-  .promo__banner .promo__banner--text {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 0;
   }
   .promo__banner .promo__banner--text .promo__banner--title {
     font-size: 14px;
   }
   .promo__banner .promo__banner--text .promo__banner--title span {
     font-size: 20px;
-  }
-  .promo__banner .promo__banner--text .promo__banner--subtitle,
-  .promo__banner .promo__banner--text .promo__banner--note {
-    position: static;
-    margin: 8px 0 0 0;
   }
   .promo__banner .promo__banner--image {
     margin-top: 1rem;
@@ -443,26 +422,16 @@ footer .footer__item span {
   .menu__categories .menu__categories--first,
   .menu__categories .menu__categories--secondary,
   .menu__categories .menu__categories--final {
-    width: 45%;
+    width: 70%;
   }
   .cards__item {
     width: 100%;
-    flex-direction: row;
     height: auto;
-    padding: 1rem;
   }
   footer {
-    width: 425px;
-    height: auto;
-    flex-wrap: nowrap;
-    padding: 1rem 0;
-    justify-content: space-evenly;
-    padding: 5 18px;
-    gap: 20px;
-  }
-  footer .footer__item {
-    margin-top: 0;
-    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 10px;
   }
 }
 

@@ -45,8 +45,7 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  margin: auto;
+  margin: 0 auto;
 }
 .container header {
   width: 375px;
@@ -146,7 +145,6 @@ body {
   justify-content: space-around;
   background-color: #ffffff;
   border-top: 1px solid #ffffff;
-  width: 375px;
   height: 70px;
   border-radius: 12px;
   margin-top: 20px;
@@ -229,11 +227,9 @@ body {
     font-size: 15px;
   }
   .container footer {
-    width: 100%;
-    gap: 50px;
-    padding: 0 12px;
+    width: 385px;
+    margin-right: 40px;
     height: 80px;
-    margin-top: 120px;
   }
   .container footer .footer__item {
     font-size: 13px;
